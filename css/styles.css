@@ -114,6 +114,11 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+.main-btn-link:hover,
+.main-btn-link:focus {
+  color: #ffffff;
+  background-color: #188ce8;
+}
 
 .second-title {
   color: var(--main-txt-cl);
@@ -128,6 +133,7 @@ body {
   text-transform: uppercase;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .about-desc {
@@ -208,4 +214,40 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--accent-txt-cl);
+}
+
+.btn-project {
+  font-family: inherit;
+  color: var(--main-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+/**
+.main-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer; */
+
+.project-link:hover,
+.project-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.project-link-current {
+  color: #ffffff;
+  background-color: #2196f3;
 }
