@@ -41,7 +41,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -49,7 +49,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--link-txt-cl);
 }
@@ -57,7 +57,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -66,7 +66,7 @@ body {
 .header-email {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   color: #212121;
@@ -82,10 +82,10 @@ body {
 }
 
 .header-phone,
-.header-mail-portfolio {
+.header-mail {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   color: #757575;
@@ -106,13 +106,17 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #188ce8;
 }
 .main-btn-link:hover,
 .main-btn-link:focus {
@@ -124,14 +128,14 @@ body {
   color: var(--main-txt-cl);
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42 / 36);
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .section-subtitle {
   color: var(--main-txt-cl);
   text-transform: uppercase;
-  line-height: calc(16 / 14);
+  line-height: 1.1;
   letter-spacing: 0.03em;
   font-size: 14px;
 }
@@ -139,7 +143,7 @@ body {
 .about-desc {
   color: var(--accent-txt-cl);
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .team {
@@ -148,7 +152,7 @@ body {
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(19 / 16);
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
@@ -157,7 +161,7 @@ body {
 .about-desc {
   color: var(--accent-txt-cl);
   font-size: 16px;
-  line-height: calc(19 / 16);
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -169,14 +173,14 @@ body {
   font-style: normal;
 }
 .footer-adress {
-  line-height: calc(24 / 14);
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-email,
 .footer-phone {
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -187,10 +191,38 @@ body {
 |===============================
 */
 
+.project-link:hover,
+.project-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.btn-project:hover,
+.btn-project:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.btn-project {
+  font-family: inherit;
+  color: var(--main-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.btn-project-current {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 .functional-list {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -205,49 +237,13 @@ body {
 .projects-item {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(36 / 18);
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
 
 .projects-about {
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 1.9;
   color: var(--accent-txt-cl);
-}
-
-.btn-project {
-  font-family: inherit;
-  color: var(--main-txt-cl);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-
-/**
-.main-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer; */
-
-.project-link:hover,
-.project-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-.project-link-current {
-  color: #ffffff;
-  background-color: #2196f3;
 }
